@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Germania+One&display=swap');
+
+*,a{
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    color: black;
+    /* background-color: #f2f9f4; */
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    font-size: 25px;
+}
+
+.nav_item{
+    background-color: #deeee8;
+    height: min-content;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.logo{
+    background-color: #8fd8c5;
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+    fill: green;
+}
+
+.nav_item ul li a {
+    padding: 20px;
+
+}
+.nav_item ul li a:hover {
+    background-color: #c0dad6;
+    padding: 20px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    
+    cursor: pointer;
+}

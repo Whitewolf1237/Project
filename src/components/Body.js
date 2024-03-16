@@ -4,9 +4,8 @@ import ProjectBody from './ProjectBody'
 
 const Body = () => {
 return (
-    <div className='flex flex-wrap gap-3'>
-        <ProjectBody />
-        <RenderedTemp />
+    <div>
+
     </div>
 )
 }
