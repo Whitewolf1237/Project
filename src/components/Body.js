@@ -1,6 +1,6 @@
 import React from 'react'
 import RenderedTemp from './RenderedTemp'
-import ProjectBody from './ProjectBody'
+import ProjectBody from './PageOne'
 
 const Body = () => {
 return (

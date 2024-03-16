@@ -58,3 +58,30 @@ img{
     
     cursor: pointer;
 }
+
+.leftImage{
+
+    padding-top: 50px;
+
+}
+
+
+.backImage{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.mainImage{
+    position: absolute;
+    top: 370px;
+    left: 200px;
+    
+    z-index: inherit;
+
+}
+
+.frontImage{
+    border: 3px solid #b7d3cf;
+    border-radius: 50%;
+}
