@@ -1,20 +1,31 @@
 import React from 'react';
-import imageOne from './img/yoga-web-template.png';
-import imageTwo from './img/shaper_1.png';
+import mainImage from "./img/mainImage.png"
+import shaperFirst from "./img/shaperFirst.png"
 
 const PageOne = () => {
   return (
     <div>
-      <div className='container'>
+      <div className='containerPageOne'>
           <div className='leftImage'>
-            <div className='backImage'>
-              <img src={imageTwo} />
-            </div>
             <div className='mainImage'>
-              <img src={imageOne} className='frontImage' />  
+              <img src={mainImage} className='frontImage' />  
+            </div>
+          </div>
+          <div className='rightSide'>
+            <div className='yogaClass'>
+              <h1 className='yogaClass'>YOGA CLASS</h1>
+            </div>
+            <div className='content'>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div >
+              <button className='joinBtn'>Join Now</button>
             </div>
           </div>
       </div>
+      <div className='cornerShape'>
+            <img src={shaperFirst}/>
+          </div>
     </div>
   )
 }
