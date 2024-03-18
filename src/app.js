@@ -3,16 +3,41 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import PageOne from './components/PageOne';
+import PageTwo from './components/PageTwo';
+import { createBrowserRouter,RouterProvider,Outlet  } from "react-router-dom";
+import Error from './components/error';
+
+document.body.style.backgroundColor = "#f2f9f4"
+
 
 const AppLayout = ()=>{
     return (
         <div className="app">
             <Header />
-            <PageOne />
+            <Outlet />
         </div>
     )
 }
 
-let App = document.getElementById('app');
+const appRouter=createBrowserRouter([
+    {
+        path:"/",
+        element:<AppLayout />,
+        children:[
+            {
+                path:"/",
+                element:<PageOne />
+            },    
+],
+errorElement:<Error/>
+    },
+    {
+        path:"/pageone",
+        element:<PageOne />
+    },
 
-ReactDOM.render(<AppLayout />,App);
+])
+
+const root=ReactDOM.createRoot(document.getElementById("root"))
+
+root.render(<RouterProvider router={appRouter} />);
