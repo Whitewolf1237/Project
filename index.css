@@ -126,19 +126,45 @@ img{
     justify-content: flex-end;
     align-self: center;
     align-items: baseline;
-    padding-top: 150px;
-    margin-top: 150px;
+    padding-top: 290px;
+    margin-top: 210px;
     
 }
 
 .pageTwo{
     min-height: 100vh;
-    min-width:300px;
     background-color:#509995;
 }
 
 .sharpRightImage {
     display: flex;
     justify-content: flex-end;
-    margin-top: -210px;
+    margin-top: -10px;
+}
+
+
+.classCard{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.className h1{
+    color: white;
+}
+
+.classDetail p{
+    text-align: center;
+    color:  white;
+    font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 350px;
+}
+
+.classCards{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
 }

@@ -6,6 +6,7 @@ import PageOne from './components/PageOne';
 import PageTwo from './components/PageTwo';
 import { createBrowserRouter,RouterProvider,Outlet  } from "react-router-dom";
 import Error from './components/error';
+import Availclass from './components/Availclass';
 
 document.body.style.backgroundColor = "#f2f9f4"
 
